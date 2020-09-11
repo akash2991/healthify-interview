@@ -1,0 +1,14 @@
+.input {
+    width: 100%;
+    height: 30px;
+}
+
+.Input-container {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.sign-in {
+    margin-top: 20px;
+    font-size: x-large;
+}

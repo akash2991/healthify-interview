@@ -1,0 +1,9 @@
+.Submit-btn {
+    /* width: 500px; */
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
