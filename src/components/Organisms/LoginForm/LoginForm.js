@@ -17,7 +17,7 @@ export function LoginForm({}) {
     );
     // const [loginError, setLoginError] = useState('');
 
-    const { response, error } = useSubmitLoginForm(
+    const { response, error, call, meta } = useSubmitLoginForm(
         isFormSubmissionStarted,
         setIsFormSubmissionStarted
     );
@@ -36,7 +36,7 @@ export function LoginForm({}) {
 
     function handlePasswordInput(event) {
         const val = event.target.value;
-        if (/[A-Z]/.test(val)) {
+        if (/[A-Z]/.test(val) && val.length > 6) {
             setIsPasswordInvalid(false);
         } else {
             setIsPasswordInvalid(true);
